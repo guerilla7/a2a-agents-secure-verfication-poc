@@ -10,8 +10,6 @@ This PoC will simulate the formal verification process by:
 
 It's important to note that this PoC will not be a full-fledged formal verification tool using mathematical provers (which is a highly complex domain requiring specialized software). Instead, it will demonstrate the structure and type of checks one would consider in such a verification process, tailored to LLM agent interactions over an A2A-like protocol.
 
-This Python script provides a foundational PoC. Here's a breakdown:
-
 ## Key Components:
 
 **1. Models (AgentCard, Agent, LLMAgent, Message, Task, Capability, MessageContentType):**
