@@ -12,7 +12,7 @@ It's important to note that this PoC will not be a full-fledged formal verificat
 
 This Python script provides a foundational PoC. Here's a breakdown:
 
-Key Components:
+## Key Components:
 
 1. Models (AgentCard, Agent, LLMAgent, Message, Task, Capability, MessageContentType):
 
@@ -56,14 +56,14 @@ Scenario 4: An agent attempts to make another agent perform a task for which the
 Scenario 5: An LLM agent (Bob, without financial capability) receives a prompt that causes its simulated LLM to produce output suggesting a financial action, triggering an "excessive agency" finding.
 Scenario 6: An LLM agent (Charlie, with financial capability) receives a similar prompt. The "excessive agency" rule for its output related to finance should not trigger, as it's within its declared scope (though the initial prompt injection input rule will still trigger).
 
-How it Simulates "Formal Verification":
+### How it Simulates "Formal Verification":
 
 - Stateful Model: The Python objects (Agent, Message, etc.) and their attributes represent the state of the system.
 - Transition Simulation: The A2AProtocolSimulator drives transitions between states (e.g., message sent, message received, LLM processed).
 - Invariant/Property Checking: The FormalVerifier's rules act as invariants or properties that should hold true. For example, "a sensitive message must always be encrypted" or "an agent must not execute a task it's not authorized for."
 - Violation Detection: When a rule check fails, a VerificationFinding is logged, indicating a potential vulnerability or policy violation in the modeled scenario.
 
-To Run This PoC:
+### To Run This PoC:
 
 1. Save the code as a Python file (e.g., llm_a2a_verifier_poc.py).
 2. Run it from your terminal: python llm_a2a_verifier_poc.py
