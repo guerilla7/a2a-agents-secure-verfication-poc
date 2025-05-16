@@ -80,6 +80,3 @@ receive_message: Simulates (notionally) decrypting and verifying message signatu
 1. Save the code as a Python file (e.g., llm_a2a_verifier_poc.py).
 2. Run it from your terminal: python llm_a2a_verifier_poc.py
 3. Observe the console output, which will show the simulated interactions and the findings from the FormalVerifier.
-
-### Sample Run:
-
