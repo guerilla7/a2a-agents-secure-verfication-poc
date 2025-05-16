@@ -1,5 +1,6 @@
 # A2A Agents Secure Verification POC 
 a Python proof-of-concept (PoC) application that outlines how one might approach the security formal verification of LLM Agent applications communicating using the Google A2A (Agent-to-Agent) protocol.
+>>>>>>> 50c4f8983b7242f240fa55b7398ecee22778c117
 
 This PoC will simulate the formal verification process by:
 
